@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/betterwhite"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/logo"
+            android:src="@drawable/logo_sasy_parking"/>
+
+        <EditText
+            android:id="@+id/emailid"
+            android:paddingTop="50dp"
+            android:layout_below="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/Black"
+            android:textColorHint="@color/White"
+            android:textColor="@color/Black"
+            android:hint="Username@gmail.com" />
+
+        <EditText
+            android:id="@+id/pswd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/Black"
+            android:textColorHint="@color/White"
+            android:textColor="@color/Black"
+            android:layout_below="@+id/emailid"
+            android:inputType="textPassword"
+            android:hint="Password"
+            />
+
+        <Button
+            android:id="@+id/lgnbtn"
+            android:layout_below="@+id/pswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Login"
+            android:background="@color/betterwhite"
+            android:textColor="@color/Black"
+            android:onClick="onClickLogin"
+            />
+        <TextView
+            android:id="@+id/logntv"
+            android:layout_below="@+id/lgnbtn"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:text="Create new account"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="changeFrag"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

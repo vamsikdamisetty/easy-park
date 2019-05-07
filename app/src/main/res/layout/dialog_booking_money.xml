@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    android:background="@color/Black"
+    android:layout_gravity="center"
+    android:foregroundGravity="center"
+    android:gravity="center_vertical"
+    android:layout_marginTop="50dp"
+    android:id="@+id/dialog_payment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount in your wallet is :"
+        android:id="@+id/tv_Book_e_money"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Charges are : 40/- only"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Payment"
+        android:layout_marginTop="10dp"
+        android:id="@+id/makepayment"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"/>
+
+</LinearLayout>
+

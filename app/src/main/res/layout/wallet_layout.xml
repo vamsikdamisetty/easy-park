@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:orientation="vertical"
+    android:id="@+id/wallet_layout"
+    android:layout_height="160dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Adding Money..."
+        android:textSize="25dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/et_money"
+        android:hint="Enter the amount to be added"/>
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Add "
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+</LinearLayout>

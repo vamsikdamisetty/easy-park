@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Book_Slot">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:id="@+id/bookslot_gl">
+
+        <android.support.v7.widget.CardView
+
+            android:tag="0"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="12dp"
+            android:onClick="selectSlot"
+            app:cardElevation="6dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S1"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:onClick="selectSlot"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            android:tag="1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S2"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:onClick="selectSlot"
+            android:tag="2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="50dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S3"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:tag="3"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="50dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            android:onClick="selectSlot"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S4" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="50dp"
+            android:tag="4"
+            app:cardCornerRadius="12dp"
+            android:onClick="selectSlot"
+            app:cardElevation="6dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S5" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+        android:tag="5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:onClick="selectSlot"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S6" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:tag="6"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:onClick="selectSlot"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S7" />
+            </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:tag="7"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:onClick="selectSlot"
+
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S8" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:tag="8"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="50dp"
+            app:cardCornerRadius="12dp"
+            android:onClick="selectSlot"
+            app:cardElevation="6dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S9" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:tag="9"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="50dp"
+            app:cardCornerRadius="12dp"
+            android:onClick="selectSlot"
+            app:cardElevation="6dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S10" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+            android:tag="10"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        app:cardCornerRadius="12dp"
+            android:onClick="selectSlot"
+            app:cardElevation="6dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S11" />
+    </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:tag="11"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:onClick="selectSlot"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S12" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/savedata"
+            android:layout_gravity="center"
+            android:onClick="bookSlot"
+            android:text="BOOK IT"
+            />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home_icon"
+            android:id="@+id/go_back"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+   </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

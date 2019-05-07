@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="270dp"
+    android:background="@color/Black"
+    android:id="@+id/places_dialog"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Set the details:"
+        android:textSize="20dp"
+        android:id="@+id/place_tvtitle"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_below="@+id/place_tvtitle"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:id="@+id/radio">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Two Wheeler"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/r1"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Four Wheeler"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/r2"
+            />
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio"
+        android:text="Time :"
+        android:id="@+id/bfrom"
+        android:textSize="@dimen/fab_margin"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        />
+    <Spinner
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bfrom"
+        android:layout_below="@+id/radio"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/spnr_time"
+        android:background="@color/Grey">
+
+    </Spinner>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1"
+        android:layout_below="@+id/bfrom"
+        android:layout_marginTop="40dp"
+        android:enabled="false"
+        android:layout_centerInParent="true"
+        android:text="Book Your Slot" />
+
+
+</RelativeLayout>

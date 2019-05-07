@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/betterwhite">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="440dp"
+            android:src="@drawable/logo_sasy_parking"
+            android:forceHasOverlappingRendering="true"
+            android:screenReaderFocusable="true"/>
+
+
+        <EditText
+            android:id="@+id/txtname"
+            android:layout_marginTop="250dp"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Black"
+            android:paddingTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            />
+        <EditText
+            android:id="@+id/txtmob"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:layout_below="@+id/txtname"
+            android:hint="Mobile no" />
+        <EditText
+            android:id="@+id/txtcity"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtmob"
+            android:hint="City" />
+        <EditText
+            android:id="@+id/txtcountry"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtcity"
+            android:hint="Country" />
+
+        <EditText
+            android:id="@+id/regstrid"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtcountry"
+            android:hint="Username@gmail.com" />
+
+        <EditText
+            android:id="@+id/crtpswd"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regstrid"
+            android:inputType="textPassword"
+            android:hint="Password" />
+
+        <EditText
+            android:id="@+id/cnfmpswd"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/crtpswd"
+            android:inputType="textPassword"
+            android:hint="Confirm Password" />
+
+        <Button
+            android:id="@+id/sgnbtn"
+            android:layout_below="@+id/cnfmpswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/betterwhite"
+            android:textColor="@color/Black"
+            android:text="Signup"
+            android:onClick="onClickSignUp"
+            />
+        <TextView
+            android:id="@+id/sgntv"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Black"
+            android:layout_below="@+id/sgnbtn"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="changeFrag"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

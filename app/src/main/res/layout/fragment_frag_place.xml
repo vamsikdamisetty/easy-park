@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Find Your City"
+            android:textColor="@color/Black"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Black" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/city_hydera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="gotoCity"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/hyd_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="130dp"
+                            android:text="Hyderabad"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/city_mumbai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="gotoCity"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mumbai_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="130dp"
+                            android:text="Mumbai"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/city_bangalore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="gotoCity"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bangalore_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="130dp"
+                            android:text="Bangalore"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/city_delhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="gotoCity"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/delhi_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="130dp"
+                            android:text="New Delhi"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/city_chandi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="gotoCity"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/chand_img" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="130dp"
+                            android:text="Chandigarh"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Black" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Here are the Available Places"
+            android:textColor="@color/Black"
+            android:textStyle="bold" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="chooseOrdertype"
+                    android:id="@+id/tst"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/number"
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textSize="100dp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="115dp"
+                            android:background="@color/Black" />
+
+                        <TextView
+                            android:id="@+id/txcd1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:layout_toRightOf="@+id/number"
+                            android:gravity="center"
+                            android:text="CHARMINAR"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="100dp"
+                            android:layout_toRightOf="@+id/number"
+                            android:gravity="center"
+                            android:id="@+id/txcd11"
+                            android:text="(Hyderabad)"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="chooseOrdertype"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/number2"
+                            android:text="2"
+                            android:textSize="100dp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_marginLeft="115dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/Black" />
+
+                        <TextView
+                            android:id="@+id/txcd2"
+                            android:layout_toRightOf="@+id/number2"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="SALAR JUNG "
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(Hyderabad)"
+                            android:layout_marginTop="100dp"
+                            android:gravity="center"
+                            android:id="@+id/txcd12"
+                            android:layout_toRightOf="@+id/number2"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="chooseOrdertype"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/number3"
+                            android:text="3"
+                            android:textSize="100dp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_marginLeft="115dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/Black" />
+
+                        <TextView
+                            android:id="@+id/txcd3"
+                            android:layout_toRightOf="@+id/number3"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="BIRLA MANDIR"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(Hyderabad)"
+                            android:layout_marginTop="100dp"
+                            android:id="@+id/txcd13"
+                            android:gravity="center"
+                            android:layout_toRightOf="@+id/number3"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="chooseOrdertype"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/number4"
+                            android:text="4"
+                            android:textSize="100dp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_marginLeft="115dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/Black" />
+
+                        <TextView
+                            android:id="@+id/txcd4"
+                            android:layout_toRightOf="@+id/number4"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="MECCA MASJID"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(Hyderabad)"
+                            android:layout_marginTop="100dp"
+                            android:gravity="center"
+                            android:id="@+id/txcd14"
+                            android:layout_toRightOf="@+id/number4"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="chooseOrdertype"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/number5"
+                            android:text="5"
+                            android:textSize="100dp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_marginLeft="115dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/Black" />
+
+                        <TextView
+                            android:id="@+id/txcd5"
+                            android:layout_toRightOf="@+id/number5"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="BALAJI TEMPLE"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(Hyderabad)"
+                            android:layout_marginTop="100dp"
+                            android:gravity="center"
+                            android:id="@+id/txcd15"
+                            android:layout_toRightOf="@+id/number5"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="chooseOrdertype"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/number6"
+                            android:text="6"
+                            android:textSize="100dp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_marginLeft="115dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/Black" />
+
+                        <TextView
+                            android:id="@+id/txcd6"
+                            android:layout_toRightOf="@+id/number6"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="HUSSAIN SAGAR"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(Hyderabad)"
+                            android:layout_marginTop="100dp"
+                            android:gravity="center"
+                            android:id="@+id/txcd16"
+                            android:layout_toRightOf="@+id/number6"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="chooseOrdertype"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/number7"
+                            android:text="7"
+                            android:textSize="100dp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_marginLeft="115dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/Black" />
+
+                        <TextView
+                            android:id="@+id/txcd7"
+                            android:layout_toRightOf="@+id/number7"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="RAMOJI FILM"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(Hyderabad)"
+                            android:layout_marginTop="100dp"
+                            android:gravity="center"
+                            android:id="@+id/txcd17"
+                            android:layout_toRightOf="@+id/number7"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    </FrameLayout>
